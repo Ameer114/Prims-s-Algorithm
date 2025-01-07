@@ -5,16 +5,6 @@ void prim(int c){
 	int i,j;
 	int min=999, adj_vertex=999, src;
 	visited[c]=1;
-		
-	for(i=0;i<n;i++){
-		if(graph[c][i]&&!visited[i]){
-			if(graph[c][i]<min){
-				min=graph[c][i];
-				src=c;
-				adj_vertex=i;
-			}
-		}
-	}
 	
 	for(i=0;i<n;i++){
 		if(visited[i]){
